@@ -9,6 +9,10 @@ class VentureCapitalist
         @@all << self
     end
 
+    def offer_contract(startup, type_of_investment, amount_invested)
+        FundingRound.new(type_of_investment, amount_invested, startup, self)
+    end 
+
     def self.all
         @@all
     end 

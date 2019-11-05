@@ -34,7 +34,9 @@ wonderful = VentureCapitalist.new("Kevin O'Leary", 700000000)
  uber.num_funding_rounds
  uber.total_funds
  uber.investors
- p uber.big_investors
+  uber.big_investors
+
+p barb.offer_contract(lyft, "Angel", 50000)
 
 
  
