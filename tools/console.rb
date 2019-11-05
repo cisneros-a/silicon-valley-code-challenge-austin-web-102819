@@ -7,6 +7,7 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+#startups
 
 uber = Startup.new("Uber", "Travis", "Transportation")
 wework = Startup.new("WeWork", "Adam", "Real Estate")
@@ -15,19 +16,28 @@ lyft = Startup.new("Lyft", "Idk", "Transportation")
 
  # Startup.domains
 
-uber.pivot("New name", "New domain")
-uber.domain
 
+
+#VC's
 mark = VentureCapitalist.new("Mark Cuban", 4000000000)
 daymond = VentureCapitalist.new("Daymond John", 800000000)
 barb = VentureCapitalist.new("Barb Cooper", 3000000000)
 wonderful = VentureCapitalist.new("Kevin O'Leary", 700000000)
 
- #VentureCapitalist.tres_commas_club
+ #FundingRounds
 
  funding1 = FundingRound.new("Pre-Seed", 12000, uber, mark)
  funding2 = FundingRound.new("Series-A", 450000000, wework, barb)
- binding.pry
+ uber.sign_contract(mark, "Series B", 65000)
+ uber.sign_contract(daymond, "Angel", 75000)
+
+ uber.num_funding_rounds
+ uber.total_funds
+ uber.investors
+ p uber.big_investors
+
+
+ 
 
 
 
